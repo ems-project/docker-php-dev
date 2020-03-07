@@ -1,4 +1,4 @@
-# Base php-dev image [![Build Status](https://travis-ci.org/ems-project/docker-php-dev.svg?branch=7.3)](https://travis-ci.org/ems-project/docker-php-dev)
+# Base php-dev image [![Build Status](https://travis-ci.org/ems-project/docker-php-dev.svg?branch=7.4)](https://travis-ci.org/ems-project/docker-php-dev)
 
 ## Features
 
