@@ -50,7 +50,7 @@ RUN echo "Install and Configure required extra PHP packages ..." \
     && chown 1001:0 /home/default/.composer \
     && chmod -R ug+rw /home/default/.composer \
     && echo "Install NPM ..." \
-    && apk --update add npm \
+    && apk --update add git npm \
     && rm -rf /var/cache/apk/* /home/default/.composer \
     && echo "Setup permissions on filesystem for non-privileged user ..." \
     && chown -Rf 1001:0 /home/default \
