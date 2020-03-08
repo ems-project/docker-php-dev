@@ -36,6 +36,7 @@ RUN echo "Install and Configure required extra PHP packages ..." \
     && apk add --virtual .php-dev-rundeps npm \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/* \
+    && cp "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" \
     && echo "Download and install Composer ..." \
     && curl -sSfLk https://getcomposer.org/installer -o /tmp/composer-setup.php \
     && curl -sSfLk https://composer.github.io/installer.sig -o /tmp/composer-setup.sig \
